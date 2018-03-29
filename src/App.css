@@ -2,24 +2,79 @@
   text-align: center;
 }
 
-.App-logo {
+h1 {
+  margin-top: 4vh;
+}
+
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+} */
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  height: 8vh;
+}
+
+#navbar h1 {
+  padding: .5rem 2rem;
+  margin: 0;
+}
+
+#about-section {
+  text-align: center;
+  height: 100vh;
+  background: rgb(136, 213, 236);
+}
+
+#about-section h1 {
+  margin: 0;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-image: url("/images/background.jpg");
+  height: 100vh;
   padding: 20px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header h3 {
+  color: rgb(76, 87, 146);
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 5em;
+  color: white;
 }
 
-.App-intro {
-  font-size: large;
+#skills-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.skills-item > img {
+  height: 5rem;
+}
+
+#portfolio-section {
+  height: 100vh;
+  background: white;
+}
+
+#blog-section {
+  height: 100vh;
+  background: rgb(136, 213, 236);
 }
 
 @keyframes App-logo-spin {
