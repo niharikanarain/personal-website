@@ -13,30 +13,55 @@ h1 {
 
 #navbar {
   display: flex;
+  align-items: center;
+  height: 60px;
+  width: 90vw;
+  background: #CAFFD0;
+  padding: 0 2rem;
+  margin: 0 5vw 0 3vw;
+  opacity: 0.8;
+  border-radius: 0 0 15px 15px;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+}
+
+#navbar.active {
+  transform: translateY(0);
+}
+
+#navbar div {
+  display: flex;
   flex-direction: row;
-  height: 8vh;
+  width: 50vw;
 }
 
 #navbar h1 {
   padding: .5rem 2rem;
   margin: 0;
+  padding: 0;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-#about-section {
-  text-align: center;
-  height: 100vh;
-  background: rgb(136, 213, 236);
+#navbar h1 a {
+  text-decoration: none;
+  color: #555555;
+  border-radius: 5px;
+  padding: 0 2rem;
+  transition: all 0.5s ease;
 }
 
-#about-section h1 {
-  margin: 0;
+#navbar h1 a:hover {
+  text-decoration: none;
+  color: #CAFFD0;
+  background-color: #555555;
 }
 
 .App-header {
   background-image: url("/images/background.jpg");
   height: 100vh;
   padding: 20px;
-  color: white;
+  color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,13 +69,27 @@ h1 {
 }
 
 .App-header h3 {
-  color: rgb(76, 87, 146);
+  color: lightgray;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 2em;
 }
 
 .App-title {
   font-size: 5em;
-  color: white;
+  color: lightgray;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
+
+#about-section {
+  text-align: center;
+  height: 100vh;
+  background: lightgray
+}
+
+#about-section h1 {
+  margin: 0;
+}
+
 
 #skills-wrapper {
   display: flex;
@@ -69,12 +108,12 @@ h1 {
 
 #portfolio-section {
   height: 100vh;
-  background: white;
+  background: #0197a5;
 }
 
 #blog-section {
   height: 100vh;
-  background: rgb(136, 213, 236);
+  background: lightgray
 }
 
 @keyframes App-logo-spin {
